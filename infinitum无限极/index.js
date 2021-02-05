@@ -38,3 +38,6 @@ let treeData = formatDataThree(data);
 console.log(treeData);
 let treeData1 = formatDataThree1(data);
 console.log(treeData1);
+const pre = document.querySelector('#pre');
+pre.innerHTML = JSON.parse(treeData)
+console.log(pre)

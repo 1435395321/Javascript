@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a10a4bf8-78dc-4756-9b1d-593d321e2713" name="Default Changelist" comment="" />
+    <list default="true" id="a10a4bf8-78dc-4756-9b1d-593d321e2713" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/es6/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/es6/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/es6/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/es6/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infinitum无限极/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/infinitum无限极/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infinitum无限极/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/infinitum无限极/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/题目/双向绑定/mvvm.js" beforeDir="false" afterPath="$PROJECT_DIR$/题目/双向绑定/mvvm.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,10 +23,22 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1maymhGZyuyIm365wyGHWHB1OwO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,8 +48,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vue/vue-admin-template" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -55,11 +75,41 @@
       <workItem from="1611104623472" duration="23111000" />
       <workItem from="1611189219956" duration="1541000" />
       <workItem from="1611537516168" duration="3399000" />
-      <workItem from="1611882260527" duration="21771000" />
+      <workItem from="1611882260527" duration="21985000" />
+      <workItem from="1612141617006" duration="14077000" />
+      <workItem from="1612226011429" duration="597000" />
+      <workItem from="1612312909811" duration="8999000" />
+      <workItem from="1612345912272" duration="819000" />
+      <workItem from="1612432183929" duration="716000" />
+      <workItem from="1612486122608" duration="1228000" />
     </task>
+    <task id="LOCAL-00001" summary="第一次提交">
+      <created>1611914749898</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611914749898</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="第一次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一次提交" />
   </component>
 </project>

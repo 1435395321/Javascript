@@ -14,7 +14,7 @@ class MVVM {
     initData() {
         const _this = this;
         this.data ={};
-        for (let key in this._data) {;
+        for (let key in this._data) {
         }
     }
 }

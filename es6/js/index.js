@@ -223,20 +223,200 @@ let map = new Map([
     [3, "three"],
 ]);
 let arrMap = [...map.entries()];
-console.log(arrMap);
+
+// console.log(arrMap);
 
 function nice(num) {
     if (num === 1) {
         console.log("1*1=1");
     } else {
-        nice(num-1)
+        nice(num - 1);
         let str = "";
         for (let i = 1; i <= num; i++) {
-            str += i + "*" + num + "=" + i * num+ ' ';
+            str += i + "*" + num + "=" + i * num + " ";
         }
-        console.log(str);
-
+        // console.log(str);
     }
 }
 
-nice(9);
+// nice(9);
+
+// /** 对象 **/
+// Generator函数
+// 函数的name属性，返回函数名。对象方法也是函数，因此也有name属性。
+// Object.assign方法用于对象的合并，将源对象（source）的所有可枚举属性，复制到目标对象 /**/第一个参数是目标对象，后面的参数都是源对象。
+// __proto__属性（前后各两个下划线），用来读取或设置当前对象的prototype对象。
+// Object.entries values,keys 方法返回一个数组，成员是参数对象自身的（不含继承的）所有可遍历（enumerable）属性的键值对数组
+// Object.getOwnPropertyDescriptor方法，返回某个对象属性的描述对象（descriptor）。
+// Object.getOwnPropertyDescriptors 方法，返回指定对象所有自身属性（非继承属性）的描述对象。
+let obj = {
+    constructor(name) {
+        this.name = name;
+    },
+    foo: true,
+
+};
+obj.foo = "zifu";
+obj.foo = () => 1;
+obj["a" + "bc"] = 123;
+// console.log(obj.foo());
+let person = {
+    sayName() {
+        // console.log(this.name);
+    },
+};
+// console.log(person.sayName.name)
+// const key1 = Symbol('description');
+let key1 = Symbol("description");
+// console.log(obj);
+let target = { a: 1 };
+let source1 = { b: 2 };
+let source2 = { c: 3 };
+Object.assign(target, source1, source2);
+// console.log(target);
+
+let v1 = "abc";
+let v2 = [1, 2, 5, 7];
+let v3 = 10;
+
+let obj1 = Object.assign({}, v1, v2, v3);
+// console.log(obj1); // { "0": "a", "1": "b", "2": "c" }
+// let { keys, values, entries } = Object;
+let objEnt = { a: 1, b: 2, c: 3 };
+// console.log(values);
+for (let [k, v] of Object.entries(objEnt)) {
+    // console.log(`${JSON.stringify(k)}: ${JSON.stringify(v)}`); // 'a', 'b', 'c'
+}
+let objA = { a: { b: 1 } };
+let { ...xA } = objA;
+objA.a.b = 2;
+parseInt()
+// console.log(xA.a.b);// 2
+let o1 = { a: 1 };
+let o2 = { b: 2 };
+o2.__proto__ = o1;
+let o3 = { ...o2 };
+// console.log(o2);
+// 扩展运算符可以用于合并两个对象。
+let a111 = { A: 123 };
+let b1 = { B: 456 };
+let ab = { ...a111, ...b1 };
+// console.log(ab);
+let objC = { d: "c", p: "a", };
+
+let ObjNew = Object.getOwnPropertyDescriptor(objC, "d");
+// console.log(ObjNew);
+
+let objD = {
+    foo: 123,
+    get bar() {
+        return "abc";
+    }
+};
+let objDD = Object.getOwnPropertyDescriptors(objD);
+// console.log(objDD);
+
+function Car(make, model, year, owner) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.owner = owner;
+}
+
+const cat = new Car("Eagle", "Talon TSi", 1993, 'rand');
+// console.log(cat);
+
+// ES6引入了一种新的原始数据类型Symbol，表示独一无二的值。它是JavaScript语言的第七种数据类型
+
+let s = Symbol('a');
+let objS = {
+    toString() {
+        return 'abc'
+    }
+}
+// console.log(Symbol(objS));
+let mySymbol = Symbol();
+let aS = {
+    [mySymbol]: 'Hello!'
+};
+// console.log(aS);
+//强耦合
+let shapeType = {
+    triangle:Symbol()
+}
+function getArea(shape, options) {
+    let area = 0;
+
+    switch (shape) {
+        case 'Triangle': // 魔术字符串
+            area = .5 * options.width * options.height;
+            break;
+      /* ... more code ... */
+    }
+    console.log(area)
+    return area;
+}
+
+getArea(shapeType.triangle, { width: 100, height: 100 }); // 魔术字符串
+
+let now = new Date();
+console.log(now.year);
+now.year = 2001; // 987617605170
+console.log(now);
+
+var o = { a:0 }
+
+Object.defineProperties(o, {
+    "b": { get: function () { return this.a + 1; } },
+    "c": { set: function (x) { this.a = x / 2; } }
+});
+
+o.c = 10 // Runs the setter, which assigns 10 / 2 (5) to the 'a' property
+// console.log(o.b) // Runs the getter, which yields a + 1 or 6
+
+
+// Proxy 可以理解成，在目标对象之前架设一层“拦截”，外界对该对象的访问，都必须先通过这层拦截
+
+// let objP = new Proxy({}, {
+//     get: function (target, key, receiver) {
+//         console.log(`getting ${key}!`);
+//         return Reflect.get(target, key, receiver);
+//     },
+//     set: function (target, key, value, receiver) {
+//         console.log(`setting ${key}!`);
+//         return Reflect.set(target, key, value, receiver);
+//     }
+// });
+let objP = new Object([1,23,53]);
+// objP.count = 1
+//  setting count!
+// ++objP.count
+console.log(objP)
+
+// Promise是异步编程的一种解决方案，比传统的解决方案——回调函数和事件——更合理和更强大。
+let promise = new Promise(function(resolve, reject) {
+    // ... some code
+    let res = 200;
+    if (res){
+        resolve(resolve);
+    } else {
+        reject(reject);
+    }
+});
+// console.log(promise)
+'use strict'
+function test1() {
+    console.log(this)
+}
+test1();
+
+
+
+
+
+
+
+
+
+
+
