@@ -342,7 +342,7 @@ let aS = {
 // console.log(aS);
 //强耦合
 let shapeType = {
-    triangle:Symbol()
+    triangle: Symbol()
 }
 function getArea(shape, options) {
     let area = 0;
@@ -351,7 +351,7 @@ function getArea(shape, options) {
         case 'Triangle': // 魔术字符串
             area = .5 * options.width * options.height;
             break;
-      /* ... more code ... */
+        /* ... more code ... */
     }
     console.log(area)
     return area;
@@ -364,7 +364,7 @@ console.log(now.year);
 now.year = 2001; // 987617605170
 console.log(now);
 
-var o = { a:0 }
+var o = { a: 0 }
 
 Object.defineProperties(o, {
     "b": { get: function () { return this.a + 1; } },
@@ -387,17 +387,17 @@ o.c = 10 // Runs the setter, which assigns 10 / 2 (5) to the 'a' property
 //         return Reflect.set(target, key, value, receiver);
 //     }
 // });
-let objP = new Object([1,23,53]);
+let objP = new Object([1, 23, 53]);
 // objP.count = 1
 //  setting count!
 // ++objP.count
 console.log(objP)
 
 // Promise是异步编程的一种解决方案，比传统的解决方案——回调函数和事件——更合理和更强大。
-let promise = new Promise(function(resolve, reject) {
+let promise = new Promise(function (resolve, reject) {
     // ... some code
     let res = 200;
-    if (res){
+    if (res) {
         resolve(resolve);
     } else {
         reject(reject);

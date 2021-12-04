@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>重写promise</title>
+  <script>
+  </script>
+  <script src="./promise.js"></script>
+</head>
+
+<body>
+
+  <script>
+    let p = new myPromise((resolve, reject) => {
+      // resolve('OK')
+      // reject('ERROR')
+      // throw 'error'
+      setTimeout(function () {
+        resolve('success')
+      }, 1000)
+    })
+    p.then(res => {
+      console.log(res);
+    }, reason => {
+      console.warn(reason);
+    })
+    p.then(res => {
+      console.log(res);
+    }, reason => {
+      console.warn(reason);
+    })
+    p.then(res => {
+      console.log(res);
+    }, reason => {
+      console.warn(reason);
+    })
+    console.log('myPromise', p);
+
+    let c = new Promise((resolve, reject) => {
+      resolve('OK')
+    })
+    p.then(res => {
+      console.log(res);
+    }, reason => {
+      console.log(reason);
+    })
+    console.dir('Promise', c);
+  </script>
+</body>
+
+</html>

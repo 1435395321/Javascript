@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Title</title>
+  </head>
+  <body>
+    <pre id="pre"></pre>
+    <div id="id">2</div>
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+    <script>
+      // 浅拷贝
+      let o = {
+        id: 1,
+        name: "wang",
+        mes: {
+          age: 12,
+        },
+        color: ["pink", "red"],
+      };
 
-</head>
-<body>
-<pre id="pre">
+      let a = {};
+      //   Object.assign(a, o);
 
-</pre>
-<div id="id">2</div>
-<script  src="data.js"></script>
-<script  src="index.js"></script>
+      //   o.mes.age = "li";
 
-</body>
+      //   深拷贝
+      function deepCopy(newObj, oldObj) {
+        for (const k in oldObj) {
+          //   判断我们属性值类型,
+          // 获取属性值oldObj[k]
+          var item = oldObj[k];
+          //判断数组
+          if (item instanceof Array) {
+            newObj[k] = [];
+            deepCopy(newObj[k], item);
+          } else if (item instanceof Object) {
+            newObj[k] = {};
+            deepCopy(newObj[k], item);
+          } else {
+            newObj[k] = item;
+          }
+        }
+      }
+      deepCopy(a, o);
+      console.log(a);
+    </script>
+  </body>
 </html>

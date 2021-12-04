@@ -29,15 +29,16 @@ function formatDataThree1(data) {
     let _data = JSON.parse(JSON.stringify(data));
     return _data.filter(p => {
         let _arr = _data.filter(c => p.id === c.pid);
-        if(_arr.length) p.children = _arr
+        if (_arr.length) p.children = _arr
         return p.pid === 0;
     });
 }
 
-let treeData = formatDataThree(data);
-console.log(treeData);
-let treeData1 = formatDataThree1(data);
-console.log(treeData1);
-const pre = document.querySelector('#pre');
-pre.innerHTML = JSON.parse(treeData)
-console.log(pre)
+console.log(formatDataThree1(data));;
+// let treeData = formatDataThree(data);
+// console.log(treeData);
+// let treeData1 = formatDataThree1(data);
+// console.log(treeData1);
+// const pre = document.querySelector('#pre');
+// pre.innerHTML = JSON.parse(treeData)
+// console.log(pre)
