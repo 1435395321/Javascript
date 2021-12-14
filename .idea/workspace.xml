@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a10a4bf8-78dc-4756-9b1d-593d321e2713" name="Default Changelist" comment="">
+    <list default="true" id="a10a4bf8-78dc-4756-9b1d-593d321e2713" name="Default Changelist" comment="Symbol">
+      <change afterPath="$PROJECT_DIR$/es6/Set/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es6/Set/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/es6/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/es6/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/es6/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/es6/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinitum无限极/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/infinitum无限极/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinitum无限极/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/infinitum无限极/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/题目/双向绑定/mvvm.js" beforeDir="false" afterPath="$PROJECT_DIR$/题目/双向绑定/mvvm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/es6/面向对象/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/es6/面向对象/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -48,7 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vue/vue-admin-template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -82,6 +81,14 @@
       <workItem from="1612345912272" duration="819000" />
       <workItem from="1612432183929" duration="716000" />
       <workItem from="1612486122608" duration="1228000" />
+      <workItem from="1638842458933" duration="2725000" />
+      <workItem from="1638861256631" duration="3001000" />
+      <workItem from="1638926421802" duration="1369000" />
+      <workItem from="1638928716898" duration="15000" />
+      <workItem from="1638965414896" duration="1517000" />
+      <workItem from="1638969482132" duration="1043000" />
+      <workItem from="1639027950044" duration="708000" />
+      <workItem from="1639030881121" duration="24000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1611914749898</created>
